@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #e0e0e0; /* Light gray background for the entire page */
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.banner {
+    background: #555; /* Dark gray banner background color */
+    color: white; /* Set banner text color to white */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.692); /* Slightly transparent background for the top bar */
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info a {
+    color: white; /* Change the color of the email and phone links to white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover for better visibility */
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.banner-content {
+    margin-top: 20px;
+}
+
+.banner-btn {
+    background: white;
+    color: #555; /* Dark gray text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.banner-btn:hover {
+    background: #cbcbcb; /* Light background on hover */
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+    background: white; /* White background for sections */
+    margin: 20px 0; /* Space between sections */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333; /* Dark gray for headings */
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666; /* Medium gray for paragraph text */
+}
+
+.services, .advantages, .classes, .trainers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service, .advantage, .class, .trainer {
+    background: #f0f0f0; /* Light gray for cards */
+    padding: 20px;
+    border-radius: 5px;
+    width: 22%; /* Adjusted for better spacing */
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s; /* Transition for hover effects */
+}
+
+.service:hover, .advantage:hover, .class:hover, .trainer:hover {
+    transform: translateY(-5px);
+    background: #777; /* Darker gray on hover */
+    color: white; /* Change text color on hover */
+}
+
+.class img, .trainer img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #333; /* Dark background for footer */
+    color: white; /* Set all footer text to white */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: white; /* Ensure links in the footer are white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover for better visibility */
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.social a {
+    color: white; /* Ensure social media links are white */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service, .advantage, .class, .trainer {
+        width: 45%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service, .advantage, .class, .trainer {
+        width: 100%; /* Full width on mobile */
+    }
+}
